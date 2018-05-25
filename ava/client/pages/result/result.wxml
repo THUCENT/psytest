@@ -1,0 +1,103 @@
+<!--pages/result/result.wxml-->
+
+<view class="page">
+
+  <view class="big five">
+    <view class='neuroticism'>
+      <image class='handIcon' src='../../images/N(1).png'></image>
+      <text style='font-size:30rpx;'>"神经质N"：</text>
+      <text class='result' style='font-size:30rpx;'>{{scoreN}}</text>
+    </view>
+
+    <view class='above'>
+      <block>
+        <view class='extraversion'>
+          <image class='handIcon' src='../../images/E.png'></image>
+          <text style='font-size:30rpx;'>"外倾性E":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreE}}</text>
+        </view>
+
+        <view class='openness'>
+          <image class='handIcon' src='../../images/O.png'></image>
+          <text style='font-size:30rpx;'>"开放性O":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreO}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname" style='font-size:30rpx;'>{{"hi " + userInfo.nickName}}</text>
+      </block>
+    </view>
+
+    <view class='down'>
+      <block>
+        <view class='agreeableness'>
+          <image class='handIcon' src='../../images/A.png'></image>
+          <text style='font-size:30rpx;'>"宜人性A":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreA}}</text>
+        </view>
+
+        <view class='conscientiousness'>
+          <image class='handIcon' src='../../images/C.png'></image>
+          <text style='font-size:30rpx;'>"责任心C":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreC}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+
+
+
+
+  <view class='grayLine'></view>
+
+
+  <view class="analysis" wx:if="{{scoreN>'2.5'}}">
+    <block>
+      <image class='pic' src='../../images/zhuo.jpg'></image>
+      <text style='font-size:30rpx;'>像卓别林一样，你敏感，开放，包容，给他人带来快乐</text>
+    </block>
+  </view>
+
+  <view class="analysis1" wx:if="{{scoreE>'3.5'}}">
+    <block>
+      <image class='pic' src='../../images/aidi.jpg'></image>
+      <text style='font-size:30rpx;'>像小雀斑一样，你细腻，温和，充满共情力</text>
+    </block>
+  </view>
+
+  <view class="analysis2" wx:if="{{scoreO>'3.5'}}">
+    <block>
+      <image class='pic' src='../../images/jobus.jpeg'></image>
+      <text style='font-size:30rpx;'>像乔布斯一样，你，与众不同，遥遥领先，创造力满满</text>
+    </block>
+  </view>
+
+  <view class="analysis3" wx:if="{{scoreA>'2.5'}}">
+    <block>
+      <image class='pic' src='../../images/meimei.jpg'></image>
+      <text style='font-size:30rpx;'>像meimei一样，你，热情开放，总是给世界带来欢乐</text>
+    </block>
+  </view>
+
+  <view class="analysis4" wx:if="{{scoreC>'2.5'}}">
+    <block>
+      <image class='pic' src='../../images/libai.jpeg'></image>
+      <text style='font-size:30rpx;'>一篇诗，一斗酒，一曲长歌，一剑天涯将进酒，杯莫停，你，就是李白，carry全场！</text>
+    </block>
+  </view>
+
+
+
+  <view class='bottom '>
+    <view class='right '>
+      <view class='rightText ' bindtap='returnMainPage'>返回首页</view>
+    </view>
+  </view>
+
+</view>
