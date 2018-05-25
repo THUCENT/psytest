@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "大五人格百科知识",
+  "navigationBarBackgroundColor":"#E6E6FA",
+  "navigationBarTextStyle":"black",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh":true
+}
