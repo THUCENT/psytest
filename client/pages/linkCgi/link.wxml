@@ -1,0 +1,24 @@
+<view class="container">
+    <!-- 请求按钮 -->
+
+       <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="link"> 点击传递结果，等待一会儿... </button>
+      <block wx:else>
+        <text class="userinfo-nickname" style='font-size:30rpx;'>{{userInfo.nickName}}</text>
+      </block>
+    </view>
+
+
+        <view wx:key="{{quesdata}}">
+          {{quesdata[number]}} 
+        </view>  
+        <view class='time'>
+        <view class='t0'>{{number}}</view>
+        <view class="t1"></view>
+        <view class="t2"></view>
+        <view class="t3"></view>
+        <view class="t4"></view>
+        <view class="t5"></view>
+        <view class="t6"></view>
+      </view>
+</view>

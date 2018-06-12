@@ -1,0 +1,49 @@
+.radar {
+  position: fixed;
+  top: 0;
+}
+
+.radar canvas {
+    width: 750rpx;
+    height: 680rpx;
+    background-color: #6fb9de;
+}
+
+.page-bottom {
+    background-color: #E6E6FA;
+    top: 0;
+    left: 0;
+    margin-top: 15rpx;
+    padding: 310rpx 0 0;
+    z-index: 1;
+    box-sizing: border-box;
+   
+}
+
+.username {
+    display: block;
+    font-size: 32rpx;
+    text-align: center;
+}
+.text-info {
+    display: block;
+    font-size: 32rpx;
+    color:#000;
+    text-align: center;
+}
+
+
+.qr-txt {
+    display: block;
+    color: #000;
+    font-size: 32rpx;
+    margin: 20rpx auto 0;
+    text-align: center;
+}
+.last-text {
+    display: block;
+    color: #000;
+    font-size: 32rpx;
+    margin: 20rpx auto 0;
+    text-align: center;
+}

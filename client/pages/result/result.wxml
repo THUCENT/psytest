@@ -1,0 +1,133 @@
+<!--pages/result/result.wxml-->
+
+<view class="page">
+
+  <view class="big five">
+    <view class='neuroticism'>
+      <image class='handIcon' src='../../images/N(1).png'></image>
+      <text style='font-size:30rpx;'>"神经质N"：</text>
+      <text class='result' style='font-size:30rpx;'>{{scoreN}}</text>
+    </view>
+
+    <view class='above'>
+      <block>
+        <view class='extraversion'>
+          <image class='handIcon' src='../../images/E.png'></image>
+          <text style='font-size:30rpx;'>"外倾性E":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreE}}</text>
+        </view>
+
+        <view class='openness'>
+          <image class='handIcon' src='../../images/O.png'></image>
+          <text style='font-size:30rpx;'>"开放性O":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreO}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname" style='font-size:30rpx;'>{{"hi " + userInfo.nickName}}</text>
+      </block>
+    </view>
+
+    <view class='down'>
+      <block>
+        <view class='agreeableness'>
+          <image class='handIcon' src='../../images/A.png'></image>
+          <text style='font-size:30rpx;'>"宜人性A":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreA}}</text>
+        </view>
+
+        <view class='conscientiousness'>
+          <image class='handIcon' src='../../images/C.png'></image>
+          <text style='font-size:30rpx;'>"责任心C":</text>
+          <text class='result' style='font-size:30rpx;'>{{scoreC}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+
+
+
+
+  <view class='grayLine'></view>
+
+
+  <view class="analysis" wx:if="{{scoreN<'3'&& scoreC>'3'&& scoreE>'3' }}">
+    <block>
+      <image class='pic' src='../../images/jack M.jpg' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>yoyo~ Jack M，悔开Ali，是传奇也是段子手</text>
+    </block>
+  </view>
+
+  <view class="analysis1" wx:if="{{scoreN<'3'&& scoreC>'3'&& scoreE<'3' }}">
+    <block>
+      <image class='pic' src='../../images/peter L.jpg' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>Robbin L，我给你便利，你呢？默默耕耘的实干家</text>
+    </block>
+  </view>
+
+  <view class="analysis2" wx:if="{{scoreN<'3' && scoreC<'3'&& scoreE>'3'}}">
+    <block>
+      <image class='pic' src='../../images/ponyM.png' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>PonyM，PICK一下，致力于打造最受尊敬的互联网企业</text>
+    </block>
+  </view>
+
+  <view class="analysis3" wx:if="{{scoreN<'3'&& scoreC<'3'&&scoreE<'3' }}">
+    <block>
+      <image class='pic' src='../../images/zeker.png' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>Mark Elliot Zuckerberg，是天才，领导者和梦想家</text>
+    </block>
+  </view>
+
+  <view class="analysis4" wx:if="{{scoreN>'3'&& scoreC>'3'&& scoreE>'3' }}">
+    <block>
+      <image class='pic' src='../../images/JOBES.jpg' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>Steve Jobs，永远简洁，力挽狂澜，永远与众不同</text>
+    </block>
+  </view>
+
+
+  <view class="analysis5" wx:if="{{scoreN>'3'&& scoreC>'3'&& scoreE<'3'}}">
+    <block>
+      <image class='pic' src='../../images/stone.jpg' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>江山和美人，誉满天下必定谤满天下</text>
+    </block>
+  </view>
+
+    <view class="analysis6" wx:if="{{scoreN>'3'&& scoreC<'3'&& scoreE>'3' }}">
+    <block>
+      <image class='pic' src='../../images/sicong.jpg' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>是纪检委，在前人的肩膀上，做有意义的事业</text>
+    </block>
+  </view>
+
+
+
+    <view class="analysis7" wx:if="{{scoreN>'3'&& scoreC<'3'&& scoreE<'3'}}">
+    <block>
+      <image class='pic' src='../../images/jia.jpg' mode='scaleToFill'></image>
+      <text style='font-size:30rpx;'>你的人格更倾向于ta</text>
+      <text style='font-size:30rpx;'>白日梦想家？任性的小孩？你曾辉煌，留与时间</text>
+    </block>
+  </view>
+
+  <view class='bottom '>
+    <view class='right '>
+      <view class='rightText ' bindtap='returnMainPage'>返回首页</view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,219 @@
+/* pages/acknow/acknow.wxss */
+page {
+  background-color: #FFFFE0;
+}
+.other-button-hover {
+  background-color: 	#FFD700;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+.top{
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 1px solid #c9c9d8;
+}
+
+.topLeft{
+  font-size:35rpx;
+  display:flex;
+  align-items:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.topRight{
+  display:flex;
+  align-items:center;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.topRightContent{
+  position: fixed;
+  margin-right: 20rpx;
+  right: 0;
+  text-align: right;
+}
+
+
+.questionTitle{
+    margin: 180rpx auto 18rpx;
+    font-family: Chalkboard;
+    font-size: 40rpx;
+    align-items:center;
+}
+
+
+.button-1st {
+  margin: 100rpx auto 18rpx;
+  display: flex;
+  flex-direction: column;
+  width: 360rpx;
+  height: 70rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  align-items: center;
+  
+}
+
+.chosen1 {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.button-2nd {
+  margin: 18rpx;
+  display: flex;
+  flex-direction: column;
+  width: 360rpx;
+  height: 70rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  align-items: center;
+}
+
+.chosen2 {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.button-3rd {
+  margin: 18rpx;
+  display: flex;
+  flex-direction: column;
+  width: 360rpx;
+  height: 70rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  align-items: center;
+}
+
+.chosen3 {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.button-4th {
+  margin: 18rpx;
+  display: flex;
+  flex-direction: column;
+  width: 360rpx;
+  height: 70rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  align-items: center;
+}
+
+.chosen4 {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.button-5th {
+  margin: 18rpx;
+  display: flex;
+  flex-direction: column;
+  width: 360rpx;
+  height: 70rpx;
+  border: 2rpx solid #353535;
+  border-radius: 10rpx;
+  align-items: center;
+}
+
+.chosen5 {
+  margin: auto;
+  font-family: Songti TC;
+  font-size: 32rpx;
+  color: #585858;
+}
+
+.option{
+  color: #595757;
+  font-size: 35rpx;
+  float: left;
+  margin-left: 20rpx;
+  width: 80%;
+}
+
+.correctCharacter{
+  border:1px #1bd0bd solid;
+  background-color: #1bd0bd;
+  color: white;
+}
+
+
+
+.blankCharacter{
+  border:1px #1bd0bd solid;
+  background-color: white;
+  color: #1bd0bd;
+}
+
+.character{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 100px;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  float: left;
+}
+
+
+
+ .bottom{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  border-top: 1px solid #c9c9d8;
+text-align: center;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+} 
+
+
+.leftIcon{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.submit{
+  display: flex;
+  font-size: 30rpx;
+  background-color: #87CEEB;
+  width: 180rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  color: #ffffff;
+  text-align: center;
+  margin: 30rpx;
+  justify-content:center;
+  align-items:center;
+}
+
+.handIcon{
+  width: 60rpx;
+  height: 60rpx;
+}

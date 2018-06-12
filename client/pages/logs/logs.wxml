@@ -1,0 +1,15 @@
+<view>
+    <view class="page-top">
+          <image src="../../images/personality.jpg" class="qr-img"></image>
+    </view>
+    <view class="page-bottom">
+        <text class="username">大五性格（Big Five Personality Traits）</text>
+        <text class="text-info">是现代心理学中描述最高级组织层次的五个方面的人格特质,五大人格特质构成了人的主要性格。</text>
+        <text class="qr-txt">外向性（Extraversion）
+亲和性（Agreeableness）
+尽责性（Conscientiousness）
+情绪不稳定性（Neuroticism）
+经验开放性（Openness to experience）</text>
+        <text class="last-text">相较于状态（states）和情绪（moods），特质不随环境变化而改变,能够更好地理解人生，预测未来。</text>
+    </view>
+</view>
