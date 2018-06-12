@@ -1,13 +1,40 @@
 {
   "pages":[
+    "pages/welcome/welcome",
     "pages/index/index",
-    "pages/addCgi/addCgi"
+    "pages/ques/ques",
+    "pages/res/res",
+    "pages/linkCgi/link",
+    "pages/addCgi/addCgi",
+    "pages/result/result",
+    "pages/mine/mine"
+ 
   ],
   "window":{
-    "backgroundColor":"#F6F6F6",
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "知我人格",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "测一测",
+        "iconPath":"images/emoji-smile.png",
+        "selectedIconPath":"images/emoji-smile-2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "其他",
+        "iconPath": "images/emoji-happy.png",
+        "selectedIconPath": "images/emoji-happy-2.png"
+      }
+    ],
+    "position": "bottom",
+    "color": "#000000",
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#ffffff"
+  },
+  "debug": true
 }

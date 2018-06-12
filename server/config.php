@@ -24,8 +24,8 @@ $config = [
         'host' => 'localhost',
         'port' => 3306,
         'user' => 'root',
-        'db'   => 'cAuth',
-        'pass' => 'wx92f9e1e5427c0b78',
+        'db'   => 'psytest',
+        'pass' => 'xq2018ww',
         'char' => 'utf8mb4'
     ],
 

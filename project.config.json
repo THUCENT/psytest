@@ -8,6 +8,27 @@
 	},
 	"appid": "wx92f9e1e5427c0b78",
 	"projectname": "wafer%20php%20demo",
-	"libVersion": "2.0.2",
-	"condition": {}
+	"libVersion": "1.6.4",
+	"compileType": "miniprogram",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
 }
